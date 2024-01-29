@@ -1,4 +1,4 @@
-# API-Grupparbete-1
+# API-Grupparbete-FRONTEND
 
 INLÄMNINGSUPPGIFT #2 Grupparbete
 
