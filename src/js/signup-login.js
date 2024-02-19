@@ -1,30 +1,28 @@
-/* function User(id, username, password, passwordIgen){
-    this.id = id,
-    this.username = username,
-    this.password = password,
-    this.passwordIgen = passwordIgen,
-    this.matches = function (searchFor) {
-        return (
-          this.username.toLowerCase().includes(searchFor) ||
-          this.password.toLowerCase().includes(searchFor) ||
-          this.passwordIgen.toLowerCase().includes(searchFor)
-        );
-    }
+const userName = document.getElementById("userName");
+const password = document.getElementById("password");
+const passwordAgain = document.getElementById("passwordAgain");
+const submitButton = document.getElementById("submit");
+
+async function fetchUsers() {
+  return await (await fetch("http://localhost:3000/getAll")).json();
 }
 
-async function fetchUsers (){
-    return await (await fetch('http://localhost:3000/api/getAll'))
-}
- */
+submitButton.addEventListener("click", async (ev) => {
+  ev.preventDefault();
+  let url = "http://localhost:3000/api/create";
+  let method = "POST";
 
-/* http://localhost:3000/login
- */
-
-
-
-
-
-/* async function fetchPlayers(){
-    return await((await fetch('http://localhost:3000/api/hockeyPlayers/')).json())
-} 
-*/
+  let users = {
+    username: userName.value,
+    password: password.value,
+    passwordIgen: passwordAgain.value,
+  };
+  let response = await fetch(url, {
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    method: method,
+    body: JSON.stringify(users),
+  });
+});
