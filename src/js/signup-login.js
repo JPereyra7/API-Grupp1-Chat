@@ -3,6 +3,8 @@ const password = document.getElementById("password");
 const passwordAgain = document.getElementById("passwordAgain");
 const submitButton = document.getElementById("submit");
 
+
+
 async function fetchUsers() {
   return await (await fetch("http://localhost:3000/getAll")).json();
 }
