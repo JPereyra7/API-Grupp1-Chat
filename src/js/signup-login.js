@@ -17,12 +17,27 @@ submitButton.addEventListener("click", async (ev) => {
     password: password.value,
     passwordIgen: passwordAgain.value,
   };
-  let response = await fetch(url, {
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    method: method,
-    body: JSON.stringify(users),
-  });
+
+  userName.value = "";
+  password.value = "";
+  passwordAgain.value = "";
+
+  try {
+    let response = await fetch(url, {
+      method: method,
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(users),
+    });
+
+    if (response.ok) {
+      alert("User created");
+    } else {
+      alert("Failed to create user, try again");
+    }
+  } catch (err) {
+    console.error("Server failed:", err);
+  }
 });
