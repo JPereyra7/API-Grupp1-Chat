@@ -8,6 +8,11 @@ body {
   background: linear-gradient(#090e16, #192b3f);
 }
 
+.logo {
+  width: 170px;
+  margin-left: 77px;
+}
+
 .signup-box {
   position: absolute;
   top: 50%;
