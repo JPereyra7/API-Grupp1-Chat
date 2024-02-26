@@ -25,7 +25,7 @@ submitButton.addEventListener("click", async (e) => {
     });
 
     if (!response.ok) {
-      throw new Error("Failed to send message");
+      console.error("Failed to send message");
     }
   } catch (err) {
     console.error(err, "server failed");
