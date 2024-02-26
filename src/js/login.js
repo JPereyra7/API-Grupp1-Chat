@@ -30,7 +30,7 @@ loginForm.addEventListener("click", async (event) => {
       body: JSON.stringify(userLogin),
     });
     if (response.ok) {
-      alert("Successful login");
+      // alert("Successful login");
       window.open("/index.html");
     } else {
       console.log("Wrong username or password");
