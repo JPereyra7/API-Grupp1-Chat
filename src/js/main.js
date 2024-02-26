@@ -9,8 +9,6 @@ submitButton.addEventListener("click", async (e) => {
 
   const message = {
     messages: textMessage.value,
-    username: "hej", //koppla till inloggad person
-    // Vi måste skapa en variabel här som tar in så att meddelandena är kopplade till username
   };
   textMessage.value = "";
 
@@ -21,6 +19,7 @@ submitButton.addEventListener("click", async (e) => {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
+      credentials: "include",
       body: JSON.stringify(message),
     });
 

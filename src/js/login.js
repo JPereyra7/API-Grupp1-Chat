@@ -1,6 +1,5 @@
 const username = document.getElementById("username");
 const password = document.getElementById("password");
-const loginButton = document.getElementById("loginButton");
 const loginForm = document.getElementById("loginForm");
 
 async function fetchUsers() {
@@ -27,6 +26,7 @@ loginForm.addEventListener("click", async (event) => {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
+      credentials: "include",
       body: JSON.stringify(userLogin),
     });
     if (response.ok) {
