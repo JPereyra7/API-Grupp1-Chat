@@ -67,14 +67,22 @@ async function renderAllMessages() {
       const messageSenderContainer = document.createElement("div");
       const messageSender = document.createElement("a");
       const actualMessage = document.createElement("div");
-
+      console.log(message);
+      const isCurrentUser = message.isCurrentUser;
       actualMessage.textContent = `${message.messages}`;
       messageSender.textContent = `${message.username}`;
+
       console.log(`${message.messages}`);
 
+      if (isCurrentUser == true) {
+        actualMessage.className = "message-box";
+        messageSenderContainer.className = "message-sender message-currentUser";
+      } else {
+        actualMessage.className = "message-box message-partner";
+        messageSenderContainer.className = "message-sender";
+      }
+
       messageBoxHolder.className = "message-box-holder";
-      messageSenderContainer.className = "message-sender";
-      actualMessage.className = "message-box message-partner";
 
       messageSenderContainer.appendChild(messageSender);
       messageBoxHolder.appendChild(messageSenderContainer);
