@@ -13,3 +13,16 @@ INSTRUKTIONER
 3. Skapa en webapplikation FRONTEND – om ni vill kan ni utgå från https://github.com/aspcodenet/chatstart där finns alla sidore och CSS som behövs fast inget JavaScript
 
 4. Det finns/ska finnas en loginsida
+
+HTML struktur för messages
+
+<!--
+            <div class="message-box-holder" id="MessageBoxHolder">
+              <div class="message-sender" id="messageSenderContainer">
+                <a href="#">Bruce Banner</a>
+              </div>
+              <div class="message-box message-partner" id="ActualMessage">
+                Hey, feeling calm today. Time travel anyone?
+              </div>
+            </div>
+            -->
