@@ -90,7 +90,6 @@ async function renderAllMessages() {
       messagesContainer.appendChild(messageBoxHolder);
     });
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
-    window.location.href = "../../login.html";
   } catch (err) {
     console.error(err, "server failed");
   }
