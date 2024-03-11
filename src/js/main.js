@@ -92,6 +92,7 @@ async function renderAllMessages() {
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
   } catch (err) {
     console.error(err, "server failed");
+    window.location.href = "../../login.html";
   }
 }
 document.addEventListener("DOMContentLoaded", async () => {
