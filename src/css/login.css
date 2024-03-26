@@ -10,7 +10,14 @@ body {
 
 .logo {
   width: 170px;
-  margin-left: 77px;
+  /* margin-left: 77px; */
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .login-box {
@@ -236,14 +243,19 @@ button#chatButton:hover {
     font-size: 14px; 
   }
   button#chatButton:active {
-  transition: 0.9s ease-in-out;
-  border: none;
-  background: #03e9f4;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
-    0 0 100px #03e9f4;
-}
+    transition: 0.9s ease-in-out;
+    border: none;
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+      0 0 100px #03e9f4;
+  }
+  .logo {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    width: 30%;
+  }
 }
 
 /* Media query for mobile devices */
@@ -259,12 +271,12 @@ button#chatButton:hover {
     font-size: 12px; 
   }
   button#chatButton:active {
-  transition: 0.9s ease-in-out;
-  border: none;
-  background: #03e9f4;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
-    0 0 100px #03e9f4;
-}
+    transition: 0.9s ease-in-out;
+    border: none;
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+      0 0 100px #03e9f4;
+  }
 }
