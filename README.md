@@ -1,4 +1,4 @@
-# API-Grupparbete-FRONTEND
+# Chatt-applikation (Group assignment in the API course)
 
 INLÄMNINGSUPPGIFT #2 Grupparbete
 
