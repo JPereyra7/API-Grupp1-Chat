@@ -3,12 +3,11 @@
 ![alt](https://github.com/JPereyra7/API-Grupp1-Chat/blob/main/src/images/login.png?raw=true)
 ![alt](https://github.com/JPereyra7/API-Grupp1-Chat/blob/main/src/images/chat.png?raw=true)
 
-
 Url 🔗: https://api-grupp1-chat.vercel.app/login.html
 
-This project lets the user create an account, login and enter a chatroom where the user can interact with others. The user is secured with bcrypt to hash the password! 
+This project lets the user create an account, login and enter a chatroom where the user can interact with others. The user is secured with bcrypt to hash the password!
 
--- Note -- 
+-- Note --
 Please note that the backend server has not been deployed so there won't be any interaction in terms of creating account/logging in and chatting, unless you download the project as ZIP or clone it.
 
 Backend Repo 🔗: https://github.com/JPereyra7/API-Chat-Backend
@@ -25,7 +24,9 @@ Backend Repo 🔗: https://github.com/JPereyra7/API-Chat-Backend
 
 [![My Skills](https://skillicons.dev/icons?i=netlify)](https://skillicons.dev)
 
-#Assignment:
+------------------------------------------------------------------------------------------------
+
+Assignment:
 
 INLÄMNINGSUPPGIFT #2 Grupparbete
 
@@ -42,14 +43,3 @@ INSTRUKTIONER
 4. Det finns/ska finnas en loginsida
 
 HTML struktur för messages
-
-<!--
-            <div class="message-box-holder" id="MessageBoxHolder">
-              <div class="message-sender" id="messageSenderContainer">
-                <a href="#">Bruce Banner</a>
-              </div>
-              <div class="message-box message-partner" id="ActualMessage">
-                Hey, feeling calm today. Time travel anyone?
-              </div>
-            </div>
-            -->
