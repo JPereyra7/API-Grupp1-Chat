@@ -1,5 +1,7 @@
 # Chatt-applikation (Group assignment in the API course)
 
+![alt](https://github.com/JPereyra7/API-Grupp1-Chat/blob/main/src/images/login.png?raw=true)
+![alt](https://github.com/JPereyra7/API-Grupp1-Chat/blob/main/src/images/chat.png?raw=true)
 
 
 Url 🔗: https://api-grupp1-chat.vercel.app/login.html
