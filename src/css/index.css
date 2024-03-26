@@ -1,64 +1,86 @@
 body {
-font-family: sans-serif;
+  font-family: sans-serif;
   background: linear-gradient(#090e16, #192b3f);
 }
 
 .chat-group-name {
-    color: #f5f5f5;
-    letter-spacing: 0.1em;
+  color: #f5f5f5;
+  letter-spacing: 0.1em;
 }
 
 .group-chat {
-    background: rgba(1, 1, 1, 0.119);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
+  background: rgba(1, 1, 1, 0.119);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
-
 
 .message-box {
-    background-color: rgba(41, 50, 51, 0.744);
-    color: rgb(249, 254, 255);
-    text-shadow: 0 0 5px #76d1d6, 0 0 25px #76d1d6, 0 0 50px;
-    border-radius: 50px;
+  background-color: rgba(41, 50, 51, 0.744);
+  color: rgb(249, 254, 255);
+  text-shadow: 0 0 5px #76d1d6, 0 0 25px #76d1d6, 0 0 50px;
+  border-radius: 50px;
 }
 
-.message-sender a, .message-sender a:link, .message-sender a:visited, .chat-partner-name a, .chat-partner-name a:link, .chat-partner-name a:visited {
-    color: aliceblue;
+.message-sender a,
+.message-sender a:link,
+.message-sender a:visited,
+.chat-partner-name a,
+.chat-partner-name a:link,
+.chat-partner-name a:visited {
+  color: aliceblue;
 }
 
 .message-partner {
-    color: rgb(249, 254, 255);
-    text-shadow: 0 0 5px #76d1d6, 0 0 25px #76d1d6, 0 0 50px;
+  color: rgb(249, 254, 255);
+  text-shadow: 0 0 5px #76d1d6, 0 0 25px #76d1d6, 0 0 50px;
 }
 
 .chat-input {
-    background-color: rgb(25, 49, 70);
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px;
-    font-size: 1em;
+  background-color: rgb(25, 49, 70);
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px;
+  font-size: 1em;
 }
 
 .chatbox-icons .fa {
-    background-color:#3a526d;
+  background-color: #3a526d;
 
-    &:hover {
-        background-color: #f5f5f5;
-    }
+  &:hover {
+    background-color: #f5f5f5;
+  }
 }
-
 
 #submitButton {
-    color: #f5f5f5;
-    background: #385070;
-    border-radius: 5px;
-
+  color: #f5f5f5;
+  background: #385070;
+  border-radius: 5px;
 }
 #submitButton:hover {
-    background: #6792cc;
+  background: #6792cc;
   color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px #385070, 0 0 25px #385070, 0 0 50px #385070,
     0 0 100px #385070;
-    transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  .chat-group-name {
+    font-size: 0.8em;
+  }
+
+  .group-chat {
+    width: 95%;
+  }
+
+  .message-box {
+    font-size: 0.8em;
+  }
+
+  .chat-input {
+    font-size: 0.8em;
+  }
 }
