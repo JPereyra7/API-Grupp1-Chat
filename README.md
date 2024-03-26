@@ -22,7 +22,7 @@ Backend Repo 🔗: https://github.com/JPereyra7/API-Chat-Backend
 
 || Host ||
 
-[![My Skills](https://skillicons.dev/icons?i=netlify)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=vercel)](https://skillicons.dev)
 
 ------------------------------------------------------------------------------------------------
 
