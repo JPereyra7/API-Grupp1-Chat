@@ -1,11 +1,11 @@
-# Chatt-applikation (Group assignment in the API course)
+# Chat-Application Frontend (Group assignment in the API course)
 
 ![alt](https://github.com/JPereyra7/API-Grupp1-Chat/blob/main/src/images/login.png?raw=true)
 ![alt](https://github.com/JPereyra7/API-Grupp1-Chat/blob/main/src/images/chat.png?raw=true)
 
 Url 🔗: https://api-grupp1-chat.vercel.app/login.html
 
-This project lets the user create an account, login and enter a chatroom where the user can interact with others. The user is secured with bcrypt to hash the password!
+This project lets the user create an account, login and enter a chatroom where the user can interact with others. This project was made using MySQL in DBeaver and through CLI, migrationhelper, Express.js, Nodemon, Cors and Rest API in the backend repo. The user is secured with bcrypt to hash the password!
 
 -- Note --
 Please note that the backend server has not been deployed so there won't be any interaction in terms of creating account/logging in and chatting, unless you download the project as ZIP or clone it.
